@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container_1 {
+    margin: 0 auto;
+    width: 1920px;
+    height: 1080px;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 100px auto 50;
+    grid-template-areas:
+      "header header header header"
+      "sidebar main main main"
+      "footer footer footer footer";
+  }
+  
+  .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .titulo_1 {
+    background-color: dodgerblue;
+    grid-area: header;
+    color: aliceblue;
+  }
+  
+  .titulo_1 p {
+    font-size: 3rem;
+  }
+  
+  .side {
+    background-color: rgb(255, 255, 255);
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    padding: 1rem;
+  }
+  
+  .side .categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .side h2 {
+    font-size: 2rem;
+  }
+  
+  .side p {
+    font-size: 1rem;
+    font-weight: 250;
+    line-height: 2.5;
+    margin: 0;
+  }
+  
+  .side span {
+    font-weight: 300;
+    color: rgb(177, 170, 170);
+  }
+  
+  .grilla {
+    background-color: rgb(216, 211, 211);
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 0.5rem;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    border: 1px solid white;
+    padding-bottom: 1rem;
+  }
+  
+  .grilla img {
+    width: 19rem;
+    margin: 0 auto;
+  }
+  
+  .grilla h2 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .card p {
+    color: blue;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .card button {
+    box-sizing: border-box;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+  .footer {
+    background-color: navy;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer p {
+    color: white;
+  }
+  
